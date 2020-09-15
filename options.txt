@@ -97,10 +97,12 @@ key_key.jei.previousPage:0
 key_key.jei.nextPage:0
 key_key.jei.bookmark:0
 key_key.jei.toggleBookmarkOverlay:0
-key_tfc.key.craft:0
+key_tfc.key.craft:46
 key_tfc.key.placeblock:47
 key_tfc.key.itemmode:50
 key_tfc.key.stack:45
+key_key.immersiveengineering.magnetEquip:31
+key_key.immersiveengineering.chemthrowerSwitch:0
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
