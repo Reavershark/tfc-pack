@@ -7,3 +7,7 @@
 // 
 // recipes.remove(<minecraft:string>); // Only from hemp
 // <ore:string>.remove(<minecraft:string>);
+
+
+// <ore:string>.remove(<minecraft:string>);
+// <ore:chest>.remove(<minecraft:chest>);

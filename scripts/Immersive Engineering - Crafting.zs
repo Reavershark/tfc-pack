@@ -12,6 +12,10 @@ JEI.removeAndHide(<immersiveengineering:storage:5>);
 JEI.removeAndHide(<immersiveengineering:storage:6>);
 JEI.removeAndHide(<immersiveengineering:storage:7>);
 
+// Use tfc ingots for lead/steel blocks
+recipes.replaceAllOccurences(<immersiveengineering:metal:2>, <ore:ingotLead>, <immersiveengineering:storage:2>);
+recipes.replaceAllOccurences(<immersiveengineering:metal:8>, <ore:ingotSteel>, <immersiveengineering:storage:8>);
+
 // Remove all metal slabs
 JEI.removeAndHide(<immersiveengineering:storage_slab:*>);
 recipes.removeShaped(<immersiveengineering:storage:*>, [[<immersiveengineering:storage_slab:*>],[<immersiveengineering:storage_slab:*>]]);
@@ -50,6 +54,7 @@ recipes.addShaped("ct_reinforced_blast_brick", <immersiveengineering:stone_decor
 
 // Remove weird slabs
 JEI.removeAndHide(<immersiveengineering:stone_decoration_slab:*>);
+JEI.removeAndHide(<immersivetech:stone_decoration_slab>);
 
 // Remove hempcrete
 JEI.removeAndHide(<immersiveengineering:stone_decoration:4>);
@@ -127,3 +132,67 @@ recipes.replaceAllOccurences(<minecraft:iron_trapdoor>, <ore:trapdoormetal>, <im
 
 // Remove coal coke block to coke item recipe
 recipes.remove(<immersiveengineering:material:6>);
+
+// Remove ie steel tools
+JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
+JEI.removeAndHide(<immersiveengineering:shovel_steel>);
+JEI.removeAndHide(<immersiveengineering:axe_steel>);
+JEI.removeAndHide(<immersiveengineering:hoe_steel>);
+JEI.removeAndHide(<immersiveengineering:sword_steel>);
+
+// Replace storage crate with treated wood planks in toolbox recipe
+recipes.replaceAllOccurences(<immersiveengineering:wooden_device0>, <ore:plankTreatedWood>, <immersiveengineering:toolbox>);
+
+// Rename hemp coil
+<immersiveengineering:wirecoil:3>.displayName = "Jute Rope Coil";
+
+// Remove hemp seeds
+JEI.removeAndHide(<immersiveengineering:seed>);
+
+// Drill heads
+recipes.replaceAllOccurences(<ore:blockSteel>, <tfc:metal/double_ingot/steel>, <immersiveengineering:drillhead:0>);
+recipes.replaceAllOccurences(<ore:blockIron>, <tfc:metal/double_ingot/wrought_iron>, <immersiveengineering:drillhead:1>);
+recipes.replaceAllOccurences(<ore:ingotSteel>, <tfc:metal/sheet/steel>, <immersiveengineering:drillhead:0>);
+recipes.replaceAllOccurences(<ore:ingotIron>, <tfc:metal/sheet/wrought_iron>, <immersiveengineering:drillhead:1>);
+
+// Bayonet
+recipes.replaceAllOccurences(<minecraft:iron_sword>, <tfc:metal/knife_blade/steel>, <immersiveengineering:toolupgrade:4>);
+
+// Faraday armor
+recipes.remove(<immersiveengineering:faraday_suit_head>);
+recipes.remove(<immersiveengineering:faraday_suit_chest>);
+recipes.remove(<immersiveengineering:faraday_suit_legs>);
+recipes.remove(<immersiveengineering:faraday_suit_feet>);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<immersiveengineering:faraday_suit_head>, 0.35, 660, true);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<immersiveengineering:faraday_suit_chest>, 0.35, 660, true);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<immersiveengineering:faraday_suit_legs>, 0.35, 660, true);
+mods.terrafirmacraft.ItemRegistry.registerItemHeat(<immersiveengineering:faraday_suit_feet>, 0.35, 660, true);
+mods.terrafirmacraft.ItemRegistry.registerArmor(<immersiveengineering:faraday_suit_head>, 500, 330, 500);
+mods.terrafirmacraft.ItemRegistry.registerArmor(<immersiveengineering:faraday_suit_chest>, 500, 330, 500);
+mods.terrafirmacraft.ItemRegistry.registerArmor(<immersiveengineering:faraday_suit_legs>, 500, 330, 500);
+mods.terrafirmacraft.ItemRegistry.registerArmor(<immersiveengineering:faraday_suit_feet>, 500, 330, 500);
+mods.terrafirmacraft.Anvil.addRecipe("ct:faraday_helmet", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_head>, 2, "armor", "HIT_LAST", "BEND_SECOND_LAST", "BEND_THIRD_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("ct:faraday_chestplate", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_chest>, 2, "armor", "HIT_LAST", "HIT_SECOND_LAST", "UPSET_THIRD_LAST");
+mods.terrafirmacraft.Anvil.addRecipe("ct:faraday_leggings", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_legs>, 2, "armor", "BEND_ANY", "DRAW_ANY", "HIT_ANY");
+mods.terrafirmacraft.Anvil.addRecipe("ct:faraday_boots", <ore:sheetDoubleAluminium>, <immersiveengineering:faraday_suit_feet>, 2, "armor", "BEND_LAST", "BEND_SECOND_LAST", "SHRINK_THIRD_LAST");
+
+// Remove ie steel armor
+JEI.removeAndHide(<immersiveengineering:steel_armor_head>);
+JEI.removeAndHide(<immersiveengineering:steel_armor_chest>);
+JEI.removeAndHide(<immersiveengineering:steel_armor_legs>);
+JEI.removeAndHide(<immersiveengineering:steel_armor_feet>);
+
+// Fluorescent tube
+JEI.removeAndHide(<immersiveengineering:fluorescent_tube>);
+
+// Heavy plated shield
+recipes.replaceAllOccurences(<minecraft:shield>, <tfc:metal/shield/steel>, <immersiveengineering:shield>);
+
+// Remove garden cloche
+JEI.removeAndHide(<immersiveengineering:metal_device1:13>);
+
+// IE redstone devices
+recipes.replaceAllOccurences(<minecraft:quartz>, <tfc:gem/beryl:*>);
+
+// Trash can
+recipes.replaceAllOccurences(<minecraft:chest>, <ore:chest>, <immersivetech:metal_trash>);

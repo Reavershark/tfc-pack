@@ -5,6 +5,14 @@ JEI.removeAndHide(<immersiveengineering:material:4>);
 <ore:fiberHemp>.remove(<immersiveengineering:material:4>);
 <ore:fiberHemp>.add(<tfc:crop/product/jute_fiber>);
 
+// Remove ie nitrate
+JEI.removeAndHide(<immersiveengineering:material:24>);
+<ore:dustSaltpeter>.remove(<immersiveengineering:material:24>);
+
+// Remove ie sulfur
+JEI.removeAndHide(<immersiveengineering:material:25>);
+<ore:dustSulfur>.remove(<immersiveengineering:material:25>);
+
 // Replace ie ingots with tfc ingots
 // This removes block / nugget to ingot recipes
 JEI.removeAndHide(<immersiveengineering:metal:0>);
@@ -84,11 +92,61 @@ JEI.removeAndHide(<immersiveengineering:metal:19>);
 // Special case, wrought iron
 <ore:dustIron>.add(<tfc:metal/dust/wrought_iron>);
 
+// Replace ie plates with tfc sheets
+JEI.removeAndHide(<immersiveengineering:metal:30>);
+JEI.removeAndHide(<immersiveengineering:metal:31>);
+JEI.removeAndHide(<immersiveengineering:metal:32>);
+JEI.removeAndHide(<immersiveengineering:metal:33>);
+JEI.removeAndHide(<immersiveengineering:metal:34>);
+JEI.removeAndHide(<immersiveengineering:metal:35>);
+JEI.removeAndHide(<immersiveengineering:metal:36>);
+JEI.removeAndHide(<immersiveengineering:metal:37>);
+JEI.removeAndHide(<immersiveengineering:metal:38>);
+JEI.removeAndHide(<immersiveengineering:metal:39>);
+JEI.removeAndHide(<immersiveengineering:metal:40>);
+<ore:plateCopper>.remove(<immersiveengineering:metal:30>);
+<ore:plateAluminum>.remove(<immersiveengineering:metal:31>);
+<ore:plateLead>.remove(<immersiveengineering:metal:32>);
+<ore:plateSilver>.remove(<immersiveengineering:metal:33>);
+<ore:plateNickel>.remove(<immersiveengineering:metal:34>);
+<ore:plateUranium>.remove(<immersiveengineering:metal:35>);
+<ore:plateConstantan>.remove(<immersiveengineering:metal:36>);
+<ore:plateElectrum>.remove(<immersiveengineering:metal:37>);
+<ore:plateSteel>.remove(<immersiveengineering:metal:38>);
+<ore:plateIron>.remove(<immersiveengineering:metal:39>);
+<ore:plateGold>.remove(<immersiveengineering:metal:40>);
+<ore:plateCopper>.add(<tfc:metal/sheet/copper>);
+<ore:plateAluminum>.add(<tfc:metal/sheet/aluminium>);
+<ore:plateLead>.add(<tfc:metal/sheet/lead>);
+<ore:plateSilver>.add(<tfc:metal/sheet/silver>);
+<ore:plateNickel>.add(<tfc:metal/sheet/nickel>);
+<ore:plateUranium>.add(<tfc:metal/sheet/uranium>);
+<ore:plateConstantan>.add(<tfc:metal/sheet/constantan>);
+<ore:plateElectrum>.add(<tfc:metal/sheet/electrum>);
+<ore:plateSteel>.add(<tfc:metal/sheet/steel>);
+<ore:plateIron>.add(<tfc:metal/sheet/wrought_iron>);
+<ore:plateGold>.add(<tfc:metal/sheet/gold>);
 
-// Remove ie nitrate
-JEI.removeAndHide(<immersiveengineering:material:24>);
-<ore:dustSaltpeter>.remove(<immersiveengineering:material:24>);
-
-// Remove ie sulfur
-JEI.removeAndHide(<immersiveengineering:material:25>);
-<ore:dustSulfur>.remove(<immersiveengineering:material:25>);
+// Remove ie nuggets
+JEI.removeAndHide(<immersiveengineering:metal:20>);
+JEI.removeAndHide(<immersiveengineering:metal:21>);
+JEI.removeAndHide(<immersiveengineering:metal:22>);
+JEI.removeAndHide(<immersiveengineering:metal:23>);
+JEI.removeAndHide(<immersiveengineering:metal:24>);
+JEI.removeAndHide(<immersiveengineering:metal:25>);
+JEI.removeAndHide(<immersiveengineering:metal:26>);
+JEI.removeAndHide(<immersiveengineering:metal:27>);
+JEI.removeAndHide(<immersiveengineering:metal:28>);
+JEI.removeAndHide(<immersiveengineering:metal:29>);
+<ore:nuggetCopper>.remove(<immersiveengineering:metal:20>);
+<ore:nuggetAluminum>.remove(<immersiveengineering:metal:21>);
+<ore:nuggetLead>.remove(<immersiveengineering:metal:22>);
+<ore:nuggetSilver>.remove(<immersiveengineering:metal:23>);
+<ore:nuggetNickel>.remove(<immersiveengineering:metal:24>);
+<ore:nuggetUranium>.remove(<immersiveengineering:metal:25>);
+<ore:nuggetConstantan>.remove(<immersiveengineering:metal:26>);
+<ore:nuggetElectrum>.remove(<immersiveengineering:metal:27>);
+<ore:nuggetSteel>.remove(<immersiveengineering:metal:28>);
+<ore:nuggetIron>.remove(<immersiveengineering:metal:29>);
+// Special case, wrought iron
+<ore:nuggetIron>.add(<tfc:metal/nugget/wrought_iron>);
