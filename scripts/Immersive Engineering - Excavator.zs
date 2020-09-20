@@ -158,4 +158,3 @@ mods.immersiveengineering.Excavator.addMineral("Boron", 5, 0.005, ["gemBoron", ]
 
 //Amber
 mods.immersiveengineering.Excavator.addMineral("Amber", 5, 0.005, ["ore:gemAmber"], [1]);
-
