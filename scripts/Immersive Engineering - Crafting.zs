@@ -196,3 +196,7 @@ recipes.replaceAllOccurences(<minecraft:quartz>, <tfc:gem/beryl:*>);
 
 // Trash can
 recipes.replaceAllOccurences(<minecraft:chest>, <ore:chest>, <immersivetech:metal_trash>);
+
+// Bullet casings
+recipes.remove(<immersiveengineering:bullet:0>);
+recipes.replaceAllOccurences(<ore:ingotCopper>, <immersiveengineering:bullet:0>, <immersiveengineering:bullet:1>);

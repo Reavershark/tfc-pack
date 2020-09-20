@@ -1,9 +1,28 @@
 import mods.immersiveengineering.MetalPress;
 
-// Remove
-
 // Brass bullet casing
 MetalPress.addRecipe(<immersiveengineering:bullet>*2, <ore:ingotBrass>, <immersiveengineering:mold:3>, 500);
+
+// Clay
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/ingot>*2, <minecraft:clay_ball>, <tfc:metal/ingot/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/pick_head>, <minecraft:clay_ball>, <tfc:metal/pick_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/shovel_head>, <minecraft:clay_ball>, <tfc:metal/shovel_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/axe_head>, <minecraft:clay_ball>, <tfc:metal/axe_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/hoe_head>, <minecraft:clay_ball>, <tfc:metal/hoe_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/chisel_head>, <minecraft:clay_ball>, <tfc:metal/chisel_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/sword_blade>, <minecraft:clay_ball>, <tfc:metal/sword_blade/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/mace_head>, <minecraft:clay_ball>, <tfc:metal/mace_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/saw_blade>, <minecraft:clay_ball>, <tfc:metal/saw_blade/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/javelin_head>, <minecraft:clay_ball>, <tfc:metal/javelin_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/hammer_head>, <minecraft:clay_ball>, <tfc:metal/hammer_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/propick_head>, <minecraft:clay_ball>, <tfc:metal/propick_head/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/knife_blade>, <minecraft:clay_ball>, <tfc:metal/knife_blade/steel>, 500, 5);
+MetalPress.addRecipe(<tfc:ceramics/unfired/mold/scythe_blade>, <minecraft:clay_ball>, <tfc:metal/scythe_blade/steel>, 500, 5);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/sleeve>, <minecraft:clay_ball>, <tfctech:metal/steel_sleeve>, 500, 5);
+MetalPress.addRecipe(<tfctech:ceramics/unfired/rackwheel_piece>, <minecraft:clay_ball>, <tfctech:metal/steel_rackwheel_piece>, 500, 5);
+
+// Remove melons
+MetalPress.removeRecipe(<minecraft:melon>);
 
 // Remove plates
 MetalPress.removeRecipe(<immersiveengineering:metal:30>);
@@ -72,3 +91,112 @@ MetalPress.removeRecipe(<tfctech:metal/tungsten_steel_rod>);
 MetalPress.removeRecipe(<tfctech:metal/zirconium_rod>);
 MetalPress.removeRecipe(<tfctech:metal/zircaloy_rod>);
 MetalPress.removeRecipe(<tfctech:metal/tough_rod>);
+
+// Remove wires
+MetalPress.removeRecipe(<tfctech:metal/steel_wire>);
+MetalPress.removeRecipe(<immersiveengineering:material:22>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/gold_wire>);
+MetalPress.removeRecipe(<tfctech:metal/copper_wire>);
+MetalPress.removeRecipe(<tfctech:metal/lead_wire>);
+MetalPress.removeRecipe(<tfctech:metal/silver_wire>);
+MetalPress.removeRecipe(<tfctech:metal/nickel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/constantan_wire>);
+MetalPress.removeRecipe(<tfctech:metal/electrum_wire>);
+MetalPress.removeRecipe(<tfctech:metal/uranium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/bismuth_wire>);
+MetalPress.removeRecipe(<tfctech:metal/bismuth_bronze_wire>);
+MetalPress.removeRecipe(<tfctech:metal/black_bronze_wire>);
+MetalPress.removeRecipe(<tfctech:metal/brass_wire>);
+MetalPress.removeRecipe(<tfctech:metal/bronze_wire>);
+MetalPress.removeRecipe(<tfctech:metal/rose_gold_wire>);
+MetalPress.removeRecipe(<tfctech:metal/tin_wire>);
+MetalPress.removeRecipe(<tfctech:metal/zinc_wire>);
+MetalPress.removeRecipe(<tfctech:metal/sterling_silver_wire>);
+MetalPress.removeRecipe(<tfctech:metal/wrought_iron_wire>);
+MetalPress.removeRecipe(<tfctech:metal/pig_iron_wire>);
+MetalPress.removeRecipe(<tfctech:metal/platinum_wire>);
+MetalPress.removeRecipe(<tfctech:metal/black_steel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/blue_steel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/red_steel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/antimony_wire>);
+MetalPress.removeRecipe(<tfctech:metal/lithium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/nickel_silver_wire>);
+MetalPress.removeRecipe(<tfctech:metal/red_alloy_wire>);
+MetalPress.removeRecipe(<tfctech:metal/mithril_wire>);
+MetalPress.removeRecipe(<tfctech:metal/invar_wire>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_brass_wire>);
+MetalPress.removeRecipe(<tfctech:metal/magnesium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/manganese_wire>);
+MetalPress.removeRecipe(<tfctech:metal/boron_wire>);
+MetalPress.removeRecipe(<tfctech:metal/magnesium_diboride_wire>);
+MetalPress.removeRecipe(<tfctech:metal/thorium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/ardite_wire>);
+MetalPress.removeRecipe(<tfctech:metal/cobalt_wire>);
+MetalPress.removeRecipe(<tfctech:metal/manyullyn_wire>);
+MetalPress.removeRecipe(<tfctech:metal/hsla_steel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/ferroboron_wire>);
+MetalPress.removeRecipe(<tfctech:metal/beryllium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/beryllium_copper_wire>);
+MetalPress.removeRecipe(<tfctech:metal/osmium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/titanium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/tungsten_wire>);
+MetalPress.removeRecipe(<tfctech:metal/tungsten_steel_wire>);
+MetalPress.removeRecipe(<tfctech:metal/zirconium_wire>);
+MetalPress.removeRecipe(<tfctech:metal/zircaloy_wire>);
+MetalPress.removeRecipe(<tfctech:metal/tough_wire>);
+
+// Remove gears
+MetalPress.removeRecipe(<tfctech:metal/steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/gold_gear>);
+MetalPress.removeRecipe(<tfctech:metal/copper_gear>);
+MetalPress.removeRecipe(<tfctech:metal/lead_gear>);
+MetalPress.removeRecipe(<tfctech:metal/silver_gear>);
+MetalPress.removeRecipe(<tfctech:metal/nickel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/constantan_gear>);
+MetalPress.removeRecipe(<tfctech:metal/electrum_gear>);
+MetalPress.removeRecipe(<tfctech:metal/uranium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/bismuth_gear>);
+MetalPress.removeRecipe(<tfctech:metal/bismuth_bronze_gear>);
+MetalPress.removeRecipe(<tfctech:metal/black_bronze_gear>);
+MetalPress.removeRecipe(<tfctech:metal/brass_gear>);
+MetalPress.removeRecipe(<tfctech:metal/bronze_gear>);
+MetalPress.removeRecipe(<tfctech:metal/rose_gold_gear>);
+MetalPress.removeRecipe(<tfctech:metal/tin_gear>);
+MetalPress.removeRecipe(<tfctech:metal/zinc_gear>);
+MetalPress.removeRecipe(<tfctech:metal/sterling_silver_gear>);
+MetalPress.removeRecipe(<tfctech:metal/wrought_iron_gear>);
+MetalPress.removeRecipe(<tfctech:metal/pig_iron_gear>);
+MetalPress.removeRecipe(<tfctech:metal/platinum_gear>);
+MetalPress.removeRecipe(<tfctech:metal/black_steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/blue_steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/red_steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/antimony_gear>);
+MetalPress.removeRecipe(<tfctech:metal/lithium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/nickel_silver_gear>);
+MetalPress.removeRecipe(<tfctech:metal/red_alloy_gear>);
+MetalPress.removeRecipe(<tfctech:metal/mithril_gear>);
+MetalPress.removeRecipe(<tfctech:metal/invar_gear>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/aluminium_brass_gear>);
+MetalPress.removeRecipe(<tfctech:metal/magnesium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/manganese_gear>);
+MetalPress.removeRecipe(<tfctech:metal/boron_gear>);
+MetalPress.removeRecipe(<tfctech:metal/magnesium_diboride_gear>);
+MetalPress.removeRecipe(<tfctech:metal/thorium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/ardite_gear>);
+MetalPress.removeRecipe(<tfctech:metal/cobalt_gear>);
+MetalPress.removeRecipe(<tfctech:metal/manyullyn_gear>);
+MetalPress.removeRecipe(<tfctech:metal/hsla_steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/ferroboron_gear>);
+MetalPress.removeRecipe(<tfctech:metal/beryllium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/beryllium_copper_gear>);
+MetalPress.removeRecipe(<tfctech:metal/osmium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/titanium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/tungsten_gear>);
+MetalPress.removeRecipe(<tfctech:metal/tungsten_steel_gear>);
+MetalPress.removeRecipe(<tfctech:metal/zirconium_gear>);
+MetalPress.removeRecipe(<tfctech:metal/zircaloy_gear>);
+MetalPress.removeRecipe(<tfctech:metal/tough_gear>);

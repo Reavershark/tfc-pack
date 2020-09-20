@@ -103,7 +103,7 @@ key_tfc.key.itemmode:50
 key_tfc.key.stack:45
 key_key.immersiveengineering.magnetEquip:31
 key_key.immersiveengineering.chemthrowerSwitch:0
-soundCategory_master:1.0
+soundCategory_master:0.10927153
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

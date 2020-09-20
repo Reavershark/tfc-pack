@@ -44,8 +44,14 @@ BlastFurnace.addRecipe(<tfc:ceramics/fired/jug>, <tfc:ceramics/unfired/jug>, 600
 BlastFurnace.addRecipe(<tfc:ceramics/fired/bowl>, <tfc:ceramics/unfired/bowl>, 600, null);
 BlastFurnace.addRecipe(<tfc:ceramics/fired/spindle>, <tfc:ceramics/unfired/spindle>, 600, null);
 BlastFurnace.addRecipe(<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/unfired/fire_brick>, 600, null);
+BlastFurnace.addRecipe(<tfctech:ceramics/mold/sleeve>, <tfctech:ceramics/unfired/sleeve>, 600, null);
+BlastFurnace.addRecipe(<tfctech:ceramics/mold/rackwheel_piece>, <tfctech:ceramics/unfired/rackwheel_piece>, 600, null);
+BlastFurnace.addRecipe(<tfctech:ceramics/mold/glass_block>, <tfctech:ceramics/unfired/glass_block>, 600, null);
+BlastFurnace.addRecipe(<tfctech:ceramics/mold/glass_pane>, <tfctech:ceramics/unfired/glass_pane>, 600, null);
 BlastFurnace.addRecipe(<minecraft:brick>, <tfc:ceramics/unfired/clay_brick>, 600, null);
+BlastFurnace.addRecipe(<minecraft:flower_pot>, <tfc:ceramics/unfired/clay_flower_pot>, 600, null);
 BlastFurnace.addRecipe(<minecraft:hardened_clay>, <minecraft:clay>, 600, null);
 
-// Remove coke block as fuel
+// Remove charcoal and coke blocks as fuel
+BlastFurnace.removeFuel(<minecraft:coal:0>);
 BlastFurnace.removeFuel(<immersiveengineering:stone_decoration:3>);
