@@ -3,17 +3,17 @@ import mods.jei.JEI;
 // Remove all ores
 JEI.removeAndHide(<immersiveengineering:ore:*>);
 
-// Remove all block recipes except lead and steel
+// Remove all block recipes except lead, silver and steel
 JEI.removeAndHide(<immersiveengineering:storage:0>);
 JEI.removeAndHide(<immersiveengineering:storage:1>);
-JEI.removeAndHide(<immersiveengineering:storage:3>);
 JEI.removeAndHide(<immersiveengineering:storage:4>);
 JEI.removeAndHide(<immersiveengineering:storage:5>);
 JEI.removeAndHide(<immersiveengineering:storage:6>);
 JEI.removeAndHide(<immersiveengineering:storage:7>);
 
-// Use tfc ingots for lead/steel blocks
+// Use tfc ingots for lead/silver/steel blocks
 recipes.replaceAllOccurences(<immersiveengineering:metal:2>, <ore:ingotLead>, <immersiveengineering:storage:2>);
+recipes.replaceAllOccurences(<immersiveengineering:metal:3>, <ore:ingotSilver>, <immersiveengineering:storage:3>);
 recipes.replaceAllOccurences(<immersiveengineering:metal:8>, <ore:ingotSteel>, <immersiveengineering:storage:8>);
 
 // Remove all metal slabs
@@ -77,7 +77,6 @@ JEI.removeAndHide(<immersiveengineering:stone_decoration:3>);
 
 // Insulating glass recipe
 recipes.remove(<immersiveengineering:stone_decoration:8>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<immersiveengineering:stone_decoration:8>, <minecraft:glass>, null, 100, 512, [<tfc:metal/dust/wrought_iron>]);
 
 // Kiln brick
 recipes.remove(<immersiveengineering:stone_decoration:10>);
@@ -200,3 +199,6 @@ recipes.replaceAllOccurences(<minecraft:chest>, <ore:chest>, <immersivetech:meta
 // Bullet casings
 recipes.remove(<immersiveengineering:bullet:0>);
 recipes.replaceAllOccurences(<ore:ingotCopper>, <immersiveengineering:bullet:0>, <immersiveengineering:bullet:1>);
+
+// Hide salt
+JEI.removeAndHide(<immersivetech:material:0>);
