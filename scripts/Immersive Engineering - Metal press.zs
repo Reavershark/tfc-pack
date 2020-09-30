@@ -149,7 +149,6 @@ MetalPress.removeRecipe(<tfctech:metal/tough_wire>);
 
 // Remove gears
 MetalPress.removeRecipe(<tfctech:metal/steel_gear>);
-MetalPress.removeRecipe(<tfctech:metal/aluminium_gear>);
 MetalPress.removeRecipe(<tfctech:metal/gold_gear>);
 MetalPress.removeRecipe(<tfctech:metal/copper_gear>);
 MetalPress.removeRecipe(<tfctech:metal/lead_gear>);
