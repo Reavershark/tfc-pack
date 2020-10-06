@@ -202,3 +202,21 @@ recipes.replaceAllOccurences(<ore:ingotCopper>, <immersiveengineering:bullet:0>,
 
 // Hide salt
 JEI.removeAndHide(<immersivetech:material:0>);
+
+// Insulated wire
+recipes.addShaped("ct_insulated_lv", <immersiveengineering:wirecoil:6>*4, [
+  [<ore:rubber>, <immersiveengineering:wirecoil:0>, <ore:rubber>],
+  [<immersiveengineering:wirecoil:0>, <ore:rubber>, <immersiveengineering:wirecoil:0>],
+  [<ore:rubber>, <immersiveengineering:wirecoil:0>, <ore:rubber>]
+]);
+recipes.addShaped("ct_insulated_mv", <immersiveengineering:wirecoil:7>*4, [
+  [<ore:rubber>, <immersiveengineering:wirecoil:1>, <ore:rubber>],
+  [<immersiveengineering:wirecoil:1>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}).transformReplace(<minecraft:bucket>), <immersiveengineering:wirecoil:1>],
+  [<ore:rubber>, <immersiveengineering:wirecoil:1>, <ore:rubber>]
+]);
+
+// Conveyor belt
+recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})*8, [
+  [<ore:rubber>, <ore:rubber>, <ore:rubber>],
+  [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]
+]);
