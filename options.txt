@@ -93,7 +93,7 @@ key_key.jei.toggleCheatMode:0
 key_key.jei.toggleEditMode:0
 key_key.jei.showRecipe:19
 key_key.jei.showUses:22
-key_key.jei.recipeBack:0
+key_key.jei.recipeBack:14
 key_key.jei.previousPage:0
 key_key.jei.nextPage:0
 key_key.jei.bookmark:0
