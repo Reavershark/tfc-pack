@@ -239,24 +239,6 @@ void main() {
 				isGrass = gl_Color.g > gl_Color.b; //some double plants are colored by texture, and others are colored by biome.
 			#endif
 		}
-		else if (id == 15) { //plants of any height
-			normal = gl_NormalMatrix[1];
-
-			#ifdef REMOVE_Y_OFFSET
-				worldPos.y = floor(worldPos.y + 0.5);
-			#endif
-			#ifdef REMOVE_XZ_OFFSET
-				worldPos.xz = floor(worldPos.xz + 0.5);
-			#endif
-
-			#ifdef GRASS_AO
-				ao = float(texcoord.y < mc_midTexCoord.y);
-			#endif
-
-			#ifdef GRASS_PATCHES
-				isGrass = gl_Color.g > gl_Color.b; //some double plants are colored by texture, and others are colored by biome.
-			#endif
-		}
 		#ifdef WAVING_LEAVES
 			else if (id == 13) { //leaves
 				normal = gl_NormalMatrix * gl_Normal;
