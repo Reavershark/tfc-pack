@@ -40,5 +40,19 @@
 		"index": 6,
 		"success": true,
 		"size": 745412
+	},
+	{
+		"time": 1602185072694,
+		"file": "2020-10-08-21-24-32.zip",
+		"index": 7,
+		"success": true,
+		"size": 745947
+	},
+	{
+		"time": 1602229322808,
+		"file": "2020-10-09-09-42-02.zip",
+		"index": 8,
+		"success": true,
+		"size": 10014033
 	}
 ]
