@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: NametagEdit
+Implementation-Version: 1.0
+Specification-Vendor: Reavershark
+Specification-Title: NametagEdit
+Implementation-Timestamp: 2020-10-12T19:42:43+0200
+Specification-Version: 1.0
+Implementation-Vendor: Reavershark
+
