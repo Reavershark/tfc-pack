@@ -26,7 +26,7 @@ ofFireworkParticles:true
 ofDrippingWaterLava:true
 ofAnimatedTerrain:true
 ofAnimatedTextures:true
-ofRainSplash:true
+ofRainSplash:false
 ofLagometer:false
 ofShowFps:true
 ofAutoSaveTicks:4000
