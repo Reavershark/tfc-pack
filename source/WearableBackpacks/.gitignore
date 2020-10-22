@@ -1,0 +1,25 @@
+# Eclipse
+/.metadata/
+/.settings/
+/bin/
+/*.launch
+/.classpath
+/.project
+
+# IDEA
+/.idea/
+/out/
+/*.ipr
+/*.iws
+*.iml
+
+# VS Code
+/.vscode/
+
+# Gradle
+/.gradle/
+/build/
+
+# Other
+/eclipse/
+/run/

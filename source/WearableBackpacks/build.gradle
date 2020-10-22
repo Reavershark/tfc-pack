@@ -1,0 +1,73 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven { url = 'http://files.minecraftforge.net/maven' }
+  }
+  dependencies {
+    classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+  }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = mod_version
+group = 'net.mcft.copy.backpacks'
+archivesBaseName = "${rootProject.name}-$mc_version"
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+minecraft {
+  version = forge_version
+  mappings = mcp_mappings
+  runDir = 'run'
+  replace '@VERSION@', project.version
+}
+
+jar {
+  from sourceSets.main.output
+  from sourceSets.api.output
+}
+
+repositories {
+  ivy {
+    name 'asie dependency mirror'
+    artifactPattern 'http://asie.pl/javadeps/[module]-[revision](-[classifier]).[ext]'
+  }
+  flatDir {
+     dirs 'libs'
+  }
+}
+
+dependencies {
+  deobfCompile name: 'InventoryTweaks', version: "$invtweaks_version-api"
+  deobfCompile name: 'TerraFirmaCraft-MC1.12.2-1.7.3.161-patched-deobf'
+}
+
+processResources {
+  inputs.property 'mod_version', project.version
+  inputs.property "mc_version", mc_version
+
+  from(sourceSets.main.resources.srcDirs) {
+    include 'mcmod.info'
+    expand mod_version: project.version, mc_version: mc_version
+  }
+
+  from(sourceSets.main.resources.srcDirs) {
+    exclude "mcmod.info"
+  }
+}
+
+task sourcesJar(type: Jar) {
+  classifier = 'sources'
+  from sourceSets.main.allJava
+  from sourceSets.api.allJava
+}
+
+task apiJar(type: Jar) {
+  classifier = 'api'
+  from sourceSets.api.output
+}
+
+artifacts {
+  archives sourcesJar
+  archives apiJar
+}

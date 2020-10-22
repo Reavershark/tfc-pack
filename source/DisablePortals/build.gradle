@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net/maven' }
+        jcenter()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle'
+
+version = '1.0'
+group = 'org.reavershark.disableportals'
+archivesBaseName = 'DisablePortals'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+minecraft {
+    mappings channel: 'stable', version: '39-1.12'
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "Disable Portals",
+            "Specification-Vendor": "Reavershark",
+            "Specification-Version": "1.0",
+            "Implementation-Title": "Disable Portals",
+            "Implementation-Version": "1.0",
+            "Implementation-Vendor": "Reavershark",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar') 
